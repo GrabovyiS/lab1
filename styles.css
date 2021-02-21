@@ -1,0 +1,75 @@
+div {
+  margin: 30px;
+  padding: 10px;
+  background-color: palegoldenrod;
+}
+* {
+  font-family: sans-serif;
+}
+.myCard {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  align-items: center; /*отвечает за поведение элементов относительно кросс-оси*/
+  justify-content: space-evenly;
+  background-color: orange;
+}
+.demo1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.demo1 .myCard {
+  flex-direction: column-reverse;
+}
+.shrink {
+  width: 750px;
+  display: flex;
+}
+.i-shrink {
+  flex-shrink: 1;
+}
+.i-shrink-more {
+  flex-shrink: 2;
+}
+.i-dont-care {
+  flex-shrink: 0;
+}
+.grow {
+  width: 750px;
+  display: flex;
+}
+.i-do-nothing {
+  flex-grow: 0;
+}
+.i-grow {
+  flex-grow: 1;
+}
+.order1 {
+  order: 1;
+}
+.self {
+  align-self: flex-end;
+}
+.flex-container {
+  display: flex;
+  height: 500px;
+}
+.basisdemo {
+  width: 750px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.basis {
+  flex-basis: 450px;
+}
+.align-content {
+  display: flex;
+  width: 1000px;
+  flex-wrap: wrap;
+  height: 1050px;
+  align-content: space-around; /*Позволяет управлять поведением многострочных флекс-контейнеров относительно кросс-оси*/
+  justify-content: space-around;
+}
